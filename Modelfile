@@ -2,13 +2,13 @@
 
 # --- 1. Chemin du Fichier GGUF (À adapter) ---
 # Remplacez ceci par le chemin réel de votre fichier GGUF
-FROM hf.co/mradermacher/Maya-152M-Flowers-GGUF
+FROM hf.co/mradermacher/Melta-english-GGUF
 
 # --- 2. Paramètres de Génération pour l'Inférénce ---
 # Ajustements pour la stabilité (légèrement plus bas pour un modèle from scratch)
-PARAMETER temperature 0.8
-PARAMETER top_p 1.0
-PARAMETER top_k 50 
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 30 
 PARAMETER num_predict 256
 
 # --- 3. Template de Prompt (CORRECTION CRUCIALE) ---
